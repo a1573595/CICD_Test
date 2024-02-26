@@ -21,4 +21,11 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.cicd_test", appContext.packageName)
     }
+
+    @Test
+    fun uiTestFailed() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.example.cicd_test_debug", appContext.packageName)
+    }
 }
