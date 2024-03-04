@@ -15,8 +15,8 @@ android {
         applicationId = "com.example.cicd_test"
         minSdk = 28
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -31,14 +31,14 @@ android {
 
             firebaseAppDistribution {
                 releaseNotes = "Release發布測試"
-                groups="QA Team"
+                groups="qa-team"
             }
         }
 
         debug {
             firebaseAppDistribution {
                 releaseNotes = "Release發布測試"
-                groups="QA Team"
+                groups="qa-team"
             }
         }
     }
